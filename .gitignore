@@ -21,3 +21,5 @@ slides-jp/*.pdf
 
 # Claude Code local settings
 .claude/
+# Font sources fetched by scripts/subset-fonts.sh
+.cache/

@@ -54,4 +54,4 @@ decktape --size 1600x1200 index.html slides.pdf
 ## LICENSE
 
 スライドのスタイル、スクリプト、文書は [Apache License 2.0](../LICENSE)、またはそれ以降の版。
-第三者の著作物 (reveal.js、画像) の条件はリポジトリ直下の [NOTICE](../NOTICE) を参照。
+第三者の著作物 (reveal.js、フォント、画像) の条件はリポジトリ直下の [NOTICE](../NOTICE) を参照。

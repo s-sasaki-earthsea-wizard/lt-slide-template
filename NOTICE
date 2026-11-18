@@ -18,6 +18,20 @@ Copyright (C) 2011-2024 Hakim El Hattab, https://hakim.se
 Licensed under the MIT License.
 
 --------------------------------------------------------------------------
+Fonts (slides-jp/vendor/fonts)
+--------------------------------------------------------------------------
+Shippori Mincho B1
+  Copyright 2021 The Shippori Mincho Project Authors
+  (https://github.com/fontdasu/ShipporiMincho)
+Zen Maru Gothic
+  Copyright 2021 The Zen Maru Gothic Project Authors
+  (https://github.com/googlefonts/zen-marugothic)
+Licensed under the SIL Open Font License, Version 1.1; see
+slides-jp/vendor/fonts/OFL-ShipporiMinchoB1.txt and OFL-ZenMaruGothic.txt.
+The files are subsets holding only the glyphs the slides use, made by
+scripts/subset-fonts.sh from the TTFs in https://github.com/google/fonts.
+
+--------------------------------------------------------------------------
 Images (slides-jp/assets/images/)
 --------------------------------------------------------------------------
 Sample images carried over from earlier talks. They are not covered by
