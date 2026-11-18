@@ -1,4 +1,4 @@
-# vrc-solar-activity-on-IT
+# スライド
 
 ## 概要
 
@@ -53,6 +53,5 @@ decktape --size 1600x1200 index.html slides.pdf
 
 ## LICENSE
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-This project uses [reveal.js](https://github.com/hakimel/reveal.js) which is also licensed under the MIT License.
+スライドのスタイル、スクリプト、文書は [Apache License 2.0](../LICENSE)、またはそれ以降の版。
+第三者の著作物 (reveal.js、画像) の条件はリポジトリ直下の [NOTICE](../NOTICE) を参照。

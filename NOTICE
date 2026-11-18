@@ -1,0 +1,25 @@
+lt-slide-template
+Copyright 2026 Syota Sasaki
+
+The slide styles, scripts and documents of this repository are licensed
+under the Apache License, Version 2.0, or (at your option) any later
+version. See LICENSE.
+
+The parts listed below are third-party works and keep their own terms.
+
+--------------------------------------------------------------------------
+reveal.js (slides-jp/dist, slides-jp/plugin, slides-jp/css, slides-jp/js,
+slides-jp/examples, slides-jp/test, slides-jp/demo.html,
+slides-jp/gulpfile.js)
+--------------------------------------------------------------------------
+https://github.com/hakimel/reveal.js
+reveal.js 5.1.0
+Copyright (C) 2011-2024 Hakim El Hattab, https://hakim.se
+Licensed under the MIT License.
+
+--------------------------------------------------------------------------
+Images (slides-jp/assets/images/)
+--------------------------------------------------------------------------
+Sample images carried over from earlier talks. They are not covered by
+the license above. A talk made from this template replaces them with
+images it has the right to use, and credits them in its own NOTICE.
