@@ -1,4 +1,4 @@
-# vrc-solar-activity-on-IT
+# スライド
 
 ## 概要
 
@@ -25,6 +25,24 @@ npm start
 
 ブラウザで [http://localhost:8000](http://localhost:8000) にアクセスすると、スライドをプレビューできます。
 
+### デザイン
+
+1280×720 (16:9) の「水彩の地図帳」テーマ。各スライドの下端に、章名・進捗バー・ページ番号のフッターが出る。
+章の区切り方や部品の使い方は、リポジトリ直下の `CLAUDE.md` の「スライド作成」にまとめてある。
+
+- 表紙のイラストは `assets/images/title.png` を 16:9 の絵に差し替える (テンプレートでは白一色のプレースホルダー。下 192 px は題の帯で隠れる)
+- 配色を変えるときは `styles/custom-style.css` の `--atlas-*` 変数を変える
+
+### フォントのサブセットを作り直す
+
+見出しと本文のフォントは、スライドで使う字だけに絞って `vendor/fonts/` に同梱している (オフラインで表示するため)。
+スライドを書いたら、リポジトリ直下で次を流す。google/fonts から元の TTF を取ってきて (`.cache/fonts/`、git の対象外)、
+`index.html` で使っている字とかな・英数・記号に絞る。[uv](https://docs.astral.sh/uv/) が要る。
+
+```bash
+make fonts
+```
+
 ### スライドをpdfでエクスポート
 
 `decktape`を使ってスライドをPDFにエクスポートできます。
@@ -40,11 +58,8 @@ npm install -g decktape
 以下のコマンドで`html`で書いたスライドをpdfにエクスポートできます:
 
 ``` bash
-# 16:9のスライドの場合
+# スライドは 16:9
 decktape --size 1920x1080 index.html slides.pdf
-
-# 4:3のスライドの場合
-decktape --size 1600x1200 index.html slides.pdf
 ```
 
 ## 免責事項
@@ -53,6 +68,5 @@ decktape --size 1600x1200 index.html slides.pdf
 
 ## LICENSE
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-This project uses [reveal.js](https://github.com/hakimel/reveal.js) which is also licensed under the MIT License.
+スライドのスタイル、スクリプト、文書は [Apache License 2.0](../LICENSE)、またはそれ以降の版。
+第三者の著作物 (reveal.js、フォント、画像) の条件はリポジトリ直下の [NOTICE](../NOTICE) を参照。
