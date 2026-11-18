@@ -28,7 +28,8 @@
 - **章とフッター。** 章の最初のスライドに `<!-- .slide: data-chapter="章名" -->` を書くと、次の章までがその章になる。
   フッター (章名・進捗バー・ページ番号) は `index.html` の `buildFooters` が作る。
   表紙は `class="title-slide"`、Appendix の扉は `class="divider" data-appendix="true"` (ここから先は章名だけ出す)
-- **表紙のイラスト** は `slides-jp/assets/images/title.png` を 16:9 の絵に差し替える。下 192 px は題の帯で隠れる。
+- **表紙のイラスト** は `slides-jp/assets/images/title.png` を 16:9 の絵に差し替える (テンプレートでは白一色のプレースホルダー)。
+  下 192 px は題の帯で隠れる。
   配色を絵に合わせるときは `custom-style.css` の `--atlas-*` 変数を変える (本文は地に対し 4.5:1 以上)
 - フォントは `slides-jp/vendor/fonts` に同梱したサブセット (見出し Shippori Mincho B1、本文 Zen Maru Gothic)。
   **スライドを書いたら `make fonts` を流す。** サブセットにない字はヒラギノで表示される (崩れはしない)

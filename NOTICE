@@ -34,6 +34,8 @@ scripts/subset-fonts.sh from the TTFs in https://github.com/google/fonts.
 --------------------------------------------------------------------------
 Images (slides-jp/assets/images/)
 --------------------------------------------------------------------------
-Sample images carried over from earlier talks. They are not covered by
-the license above. A talk made from this template replaces them with
-images it has the right to use, and credits them in its own NOTICE.
+title.png is a plain white placeholder made for this template. The
+other images are samples carried over from earlier talks and are not
+covered by the license above. A talk made from this template replaces
+them with images it has the right to use, and credits them in its own
+NOTICE.
