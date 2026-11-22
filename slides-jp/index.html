@@ -13,8 +13,7 @@
   <link rel="stylesheet" href="vendor/fonts/fonts.css">
   <link rel="stylesheet" href="styles/custom-style.css">
 
-  <!-- KaTeX (the math plugin loads KaTeX itself) -->
-  <script src="plugin/math/katex.js"></script>
+  <!-- Math plugin: it loads KaTeX from jsDelivr (version pinned in Reveal.initialize) -->
   <script src="plugin/math/math.js"></script>
 
   <!-- Theme used for syntax highlighted code -->
@@ -151,6 +150,9 @@
       height: 720,
       center: false,
       display: 'flex',
+
+      // KaTeX comes from jsDelivr; pin the version instead of following @latest.
+      katex: { version: '0.19.1' },
 
       // Learn about plugins: https://revealjs.com/plugins/
       plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX]
