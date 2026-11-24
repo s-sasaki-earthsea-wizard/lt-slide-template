@@ -33,6 +33,8 @@
   配色を絵に合わせるときは `custom-style.css` の `--atlas-*` 変数を変える (本文は地に対し 4.5:1 以上)
 - フォントは `slides-jp/vendor/fonts` に同梱したサブセット (見出し Shippori Mincho B1、本文 Zen Maru Gothic)。
   **スライドを書いたら `make fonts` を流す。** サブセットにない字はヒラギノで表示される (崩れはしない)
+- PDF は `make pdf` (decktape → `slides-jp/slides-jp.pdf`、git の対象外)。Ubuntu では AppArmor が Puppeteer の Chrome のサンドボックスを止めるので、
+  Linux では `--no-sandbox` を既定にしている。`DECKTAPE_ARGS` を渡すと既定が置き換わる
 - スライドの区切りは「`---` だけの行」(表の区切り行で割れないよう、正規表現で指定してある)
 - 見出しは大文字化しない設定にしてある。Péclet や km はそのまま書ける
 - 数式は KaTeX (`$...$` / `$$...$$`)
