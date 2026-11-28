@@ -7,23 +7,28 @@ TBA.
 ## 開発環境
 
 [reveal.js](https://github.com/hakimel/reveal.js) によってスライドの作成をしています。
-Node.js, npmが利用できる環境で、以下のコマンドで開発環境の構築ができます: 
-
-```bash
-npm install
-```
+ビルド済みの `dist/` を同梱しているので、プレビューに Node.js は要らない (Python 3 があれば足りる)。
 
 ## 使い方
 
 ### スライド作成
 
-以下のコマンドでローカルサーバーを起動:
+リポジトリ直下で次を流すと、ローカルサーバー (Python 3 の `http.server`) が起動する。止めるときは Ctrl-C:
 
 ```bash
-npm start
+make serve
 ```
 
-ブラウザで [http://localhost:8000](http://localhost:8000) にアクセスすると、スライドをプレビューできます。
+ブラウザで [http://localhost:8000](http://localhost:8000) にアクセスすると、スライドをプレビューできる。
+
+- ポートは `make serve PORT=8080` で変えられる。
+  同じネットワークの別の端末から見るときは `make serve HOST=0.0.0.0` にする (同じネットワークの誰からでも見える)
+- `PORT` と `HOST` はコマンドラインで渡す。ほかのツール向けに export した環境変数の `HOST` や `PORT` は効かないようにしてある
+- ただの静的サーバーなので、ファイルを変えても自動では再読み込みされない。
+  ブラウザで再読み込みする (URL にスライドの番号が入るので、見ていたスライドに戻る)。
+  CSS や画像が古いままに見えるときは Cmd+Shift+R (Windows と Linux では Ctrl+Shift+R) で読み直す
+- reveal.js の `npm start` (gulp serve) は Node.js 26 では起動しない。
+  yargs 17 の拡張子のない `yargs/yargs` が ES module として読まれ、`require is not defined in ES module scope` で落ちる (2026-11-28、Node.js v26.12.1 で確認)
 
 ### デザイン
 
